@@ -1,0 +1,16 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Email Topology Analysis
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jack
+    family-names: Margeson
+    email: margeson.jack@gmail.com
+    orcid: "https://orcid.org/0000-0002-2877-9023"
+    affiliation: University of Cincinnati
+repository-code: "https://github.com/jack-margeson/email-topology"
