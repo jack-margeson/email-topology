@@ -1,16 +1,22 @@
 \documentclass[a4paper]{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 \usepackage[T1]{fontenc}
+\usepackage{blindtext}
+
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb}
 \usepackage{multicol} % For multiple columns
 \usepackage{geometry} % For adjusting page margins
-\usepackage{blindtext}
-\usepackage{biblatex}
 
-% Import bibliography from bib file
-\addbibresource{email-topopogy.bib}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{email-topology.bib} % Import bibliography from bib file
+
 \pdfsuppresswarningpagegroup=1
 
 % Set page and column margins
@@ -38,7 +44,7 @@ University of Cincinnati, College of Engineering and Applied Science}
 \begin{multicols}{2}
 
 \section{Introduction}
-This paper serves as both a replication study and impact analysis on the text "Scale-free topology of e-mail networks" by Holger Ebel, Lutz-Ingo Mielsch, and Stefan Bornholdt.
+This paper serves as both a replication study and impact analysis on the text "Scale-free topology of e-mail networks" \cite{1} by Holger Ebel, Lutz-Ingo Mielsch, and Stefan Bornholdt.
 
 
 \section{Methodology}
@@ -54,5 +60,8 @@ This paper serves as both a replication study and impact analysis on the text "S
 \blindtext
 
 \end{multicols}
+
+\newpage
+\printbibliography % Show bibliography
 
 \end{document}
