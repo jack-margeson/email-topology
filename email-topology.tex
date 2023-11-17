@@ -21,7 +21,8 @@ sorting=ynt
 
 % Set page and column margins
 \geometry{margin=1in}
-\setlength\columnsep{15pt}
+\setlength\columnsep{12pt}
+\setlength{\parindent}{1.5em}
 
 \title{Replication and impact analysis of\\"Scale-free topology of e-mail networks" }
 \author{Jack Margeson\thanks{Additional author information: https://marg.es/on}\\
@@ -44,20 +45,34 @@ University of Cincinnati, College of Engineering and Applied Science}
 \begin{multicols}{2}
 
 \section{Introduction}
-This paper serves as both a replication study and impact analysis on the text "Scale-free topology of e-mail networks" \cite{1} by Holger Ebel, Lutz-Ingo Mielsch, and Stefan Bornholdt.
+\hspace*{\parindent}This report serves as both a replication study and impact analysis on the text "Scale-free topology of e-mail networks" \cite{1} by Holger Ebel, Lutz-Ingo Mielsch, and Stefan Bornholdt. 
 
+Following this introduction is a summary outlining the goals and results of the original paper. The summary leads into the replication of major findings from the paper, completed with a cleaned copy of the original dataset using NetworkX, a Python package with the purpose of creating, manipulating, and analyzing complex networks. The full source code for all replications performed can be found in a public GitHub repository \cite{2} from the author of this report. After the presentation of replications, an analysis is conducted on two identified examples of impactful work that have been produced citing the "Scale-free topology of e-mail networks" paper. Finally, a section theorizing two interesting directions for future research in the related field is included.
 
-\section{Methodology}
-\blindtext
+\section{Summary}
+\hspace*{\parindent}In the original text, Ebel et al. study a network consisting of sent and recieved e-mails. The data set used for the study was obtained by observing the log files of an e-mail server located at Kiel University. The authors of this paper were able to contruct a network based upon this data, in which the nodes represent individual e-mail addresses and links between them represent a delivered e-mail. Several mathematical analyses were conducted in order to deduce information that could help classify the network. 
 
-\section{Results}
-\blindtext
+The general conclusion found from these analyses was that their network " exhibits a scale-free link distribution and pronounced small-world behavior" \cite{1} that aligns with the findings of similar studies on various other social-based networks. Implications for these findings, including the importance of the scale-free property of the network on the spread of e-mail viruses, are touched upon briefly towards the end of the paper. 
 
-\section{Discussion}
-\blindtext
+\subsection{Strengths}
+\hspace*{\parindent}The greatest strength of the original paper is undoubtedly that it established a line of reasoning to determine the degree distribution of e-mail networks to exhibit a power law, providing evidence towards e-mail networks being scale-free. Additionally, not only did the authors find evidence that e-mail networks could be considered scale-free, they also found that the e-mail network that they had created from their sample data exhibited small world behavior, which indicates that node neighbors of a node are likely to be connected themselves. These two findings have been instrumental in future e-mail related studies, two of which will be talked about in the impact analysis section of this report.
+
+\subsection{Weaknesses}
+\hspace*{\parindent}There is a small albeit important weakness to mention present in the original paper. Justifications for this weakness are provided via opinion of the author of this report.
+
+One issue that arises in the fact that the sampling process is restricted to exclusively one e-mail server. However, it would generally be unreasonable for the authors of the paper to aquire data from other universities or similar group-based entities with an emphasis on e-mail communication. This is due to the fact that a data set of e-mails as large as the one presented in the original paper would have to be extensively cleaned as to not expose sensitive data, which would take time and energy on the part of the group providing the dataset. Given this information, it is unlikely that another dataset to enforce preliminary findings would not be feasable to obtain for the original paper authors, leaving the task of replication with alternate datasets to other publications.
+
+\section{Reproduction}
+\hspace*{\parindent}\blindtext
+
+\section{Impact Analysis}
+\hspace*{\parindent}\blindtext
+
+\section{New Directions}
+\hspace*{\parindent}\blindtext
 
 \section{Conclusion}
-\blindtext
+\hspace*{\parindent}\blindtext
 
 \end{multicols}
 
